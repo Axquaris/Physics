@@ -6,6 +6,7 @@ public abstract class Level
    FWorld world;
    String messageOnLoad;
    boolean objectiveIsCompleted;
+   boolean startSim;  
    
    public Level(FWorld w, String message)
    {
@@ -28,6 +29,8 @@ public abstract class Level
    }
    
    abstract void drawLevel();
+   
+   abstract void reset(); 
    
    
    
