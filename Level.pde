@@ -28,10 +28,9 @@ public abstract class Level
      return messageOnLoad;
    }
    
-   abstract void drawLevel();
+   abstract void updateLevel();
    
    abstract void reset(); 
-   
    
    
    
