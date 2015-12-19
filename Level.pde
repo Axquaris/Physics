@@ -14,11 +14,20 @@ public abstract class Level
      objectiveIsCompleted = false; 
    }
    
+   public Level()
+   {
+     world = null;
+     messageOnLoad="";
+     objectiveIsCompleted=false; 
+   }
+   
    public String showMessageOnLoad()
    {
      //JOptionPane.showMessageDialouge(messageOnLoad);
      return messageOnLoad;
    }
+   
+   abstract void drawLevel();
    
    
    
