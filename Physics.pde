@@ -5,7 +5,7 @@ ArrayList<UIButton> buttons;
 
 void setup()  { 
   size(1200, 800); 
-  
+  Fisica.init(this);
   Interactive.make(this);
   buttons = new ArrayList<UIButton>();
   ArrayList<UIButton> navbar = setupNavbar();
